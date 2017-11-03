@@ -1,6 +1,6 @@
 [
   {
-    "repository":  "AICP/device_htc_m7-common",
+    "repository":  "icxj1/device_htc_m7-common",
     "target_path": "device/htc/m7-common",
     "branch":      "n7.1"
   },
@@ -15,7 +15,7 @@
     "branch":      "cm-14.1"
   },
   {
-    "repository":  "AICP/kernel_htc_msm8960",
+    "repository":  "icxj1/kernel_htc_msm8960",
     "target_path": "kernel/htc/msm8960",
     "branch":      "n7.1"
   },
