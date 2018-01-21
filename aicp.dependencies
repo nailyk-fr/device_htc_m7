@@ -1,27 +1,22 @@
 [
   {
-    "repository":  "AICP/device_htc_m7-common",
+    "repository":  "icxj1/device_htc_m7-common",
     "target_path": "device/htc/m7-common",
-    "branch":      "o8.0"
-  },
-  {
-    "repository":  "AICP/device_htc_msm8960-common",
-    "target_path": "device/htc/msm8960-common",
-    "branch":      "o8.0"
+    "branch":      "o8.1"
   },
   {
     "repository":  "LineageOS/android_device_qcom_common",
     "target_path": "device/qcom/common",
-    "branch":      "lineage-15.0"
+    "branch":      "lineage-15.1"
   },
   {
-    "repository":  "AICP/kernel_htc_msm8960",
+    "repository":  "icxj1/kernel_htc_msm8960",
     "target_path": "kernel/htc/msm8960",
-    "branch":      "o8.0"
+    "branch":      "o8.1"
   },
   {
-    "repository":  "AICP/proprietary_vendor_htc",
+    "repository":  "icxj1/proprietary_vendor_htc",
     "target_path": "vendor/htc",
-    "branch":      "o8.0"
+    "branch":      "o8.1"
   }
 ]

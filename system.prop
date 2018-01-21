@@ -1,10 +1,15 @@
-# system.prop for m7
+###
+# BEGIN m7 device-properties
 #
 
-rild.libargs=-d /dev/smd0
-rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0 
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.telephony.default_network=9
 telephony.lteOnGsmDevice=1
+
+# FM
+hw.fm.internal_antenna=true
+fmradio.driver.enable=1
 
 # hardware info
 ro.device.chipset=Qualcomm Snapdragon 600
@@ -14,3 +19,6 @@ ro.device.rear_cam=HTC Ultrapixel Camera (4.1MP)
 ro.device.front_cam=2.1MP
 ro.device.screen_res=4.7 inch (1080p)
 
+#
+# END m7 device-properties
+###

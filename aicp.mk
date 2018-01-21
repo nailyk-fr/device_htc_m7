@@ -1,32 +1,20 @@
-# Copyright (C) 2017 The LineageOS Project
-# Copyright (C) 2016 The CyanogenMod Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# Inherit Aicp full phone configuration
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+
+$(call inherit-product, vendor/aicp/config/common.mk)
 
 $(call inherit-product, device/htc/m7/m7.mk)
 
-# Inherit Lineage full phone configuration
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Override build props
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT="htc/m7_google/m7:8.1.0/OPM1.171019.011/4448085:user/release-keys" \
+    BUILD_ID=LMY47O.H18 \
+    PRIVATE_BUILD_DESC="8.1.0 OPM1.171019.011 4448085 release-keys"
+    PRODUCT_NAME=HTCOne
 
 # Device naming
 PRODUCT_NAME := aicp_m7
-
-# Override build props
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="htc/m7_google/m7:5.1/LMY47O.H18/666675:user/release-keys" \
-    BUILD_ID=LMY47O.H18 \
-    PRIVATE_BUILD_DESC="6.04.1700.18 CL536258 release-keys"
-    PRODUCT_NAME=HTCOne
+PRODUCT_DEVICE := m7
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \

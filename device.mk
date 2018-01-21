@@ -18,11 +18,20 @@ $(call inherit-product, device/htc/m7-common/m7-common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/htc/m7/m7-vendor.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/m7/overlay
+
 # FM radio
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
-    qcom.fmradio
+    qcom.fmradio \
+    qcom.fmradio.xml \
+    AntHalService \
+    com.dsi.ant.antradio_library \
+    libantradio \
+    android.hardware.broadcastradio@1.0-impl
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += device/htc/m7/overlay
+# Permissions
+PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
