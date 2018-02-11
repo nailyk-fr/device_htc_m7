@@ -2,6 +2,7 @@
 # BEGIN m7 device-properties
 #
 
+# RIL
 rild.libargs=-d /dev/smd0 
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.telephony.default_network=9
@@ -11,7 +12,7 @@ telephony.lteOnGsmDevice=1
 hw.fm.internal_antenna=true
 fmradio.driver.enable=1
 
-# hardware info
+# Hardware Info
 ro.device.chipset=Qualcomm Snapdragon 600
 ro.device.cpu=1.7GHz Quad-Core Processor (arm-v7-a-neon)
 ro.device.gpu=Qualcomm Adreno 320
