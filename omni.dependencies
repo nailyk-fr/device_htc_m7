@@ -1,0 +1,14 @@
+[
+  {
+    "repository":  "nailyk-fr/device_htc_m7-common",
+    "target_path": "device/htc/m7-common",
+    "branch":      "android-8.1",
+    "remote":      "github"
+  },
+  {
+    "repository":  "nailyk-fr/android_kernel_htc_msm8960",
+    "target_path": "kernel/htc/msm8960",
+    "branch":      "android-8.1",
+    "remote":      "github"
+  }
+]

@@ -20,8 +20,6 @@ $(call inherit-product, device/htc/m7/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_BRAND := htc
-PRODUCT_DEVICE := m7
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_MODEL := One
-PRODUCT_NAME := aicp_m7
 PRODUCT_RESTRICT_VENDOR_FILES := false

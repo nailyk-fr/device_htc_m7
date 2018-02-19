@@ -1,7 +1,10 @@
-# Inherit Aicp full phone configuration
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit OmniRom full phone configuration
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
-$(call inherit-product, vendor/aicp/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
+
+$(call inherit-product-if-exists, vendor/omni/config/phone-xxhdpi-2048-dalvik-heap.mk)
+$(call inherit-product-if-exists, vendor/omni/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 $(call inherit-product, device/htc/m7/m7.mk)
 
@@ -13,14 +16,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=HTCOne
 
 # Device naming
-PRODUCT_NAME := aicp_m7
+PRODUCT_NAME := omni_m7
 PRODUCT_DEVICE := m7
 
-# AICP Device Maintainers
+# Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="icxj1 (Flash-O-Holic)"
+    DEVICE_MAINTAINERS="icxj1 (Flash-O-Holic) / nailyk"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
--include vendor/aicp/config/bootanimation.mk
