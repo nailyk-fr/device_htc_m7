@@ -29,8 +29,7 @@ PRODUCT_PACKAGES += \
     qcom.fmradio.xml \
     AntHalService \
     com.dsi.ant.antradio_library \
-    libantradio \
-    android.hardware.broadcastradio@1.0-impl
+    libantradio
 
 # Permissions
 PRODUCT_COPY_FILES += \
