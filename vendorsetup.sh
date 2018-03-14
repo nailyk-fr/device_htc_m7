@@ -1,1 +1,1 @@
-add_lunch_combo aicp_m7-userdebug
+add_lunch_combo omni_m7-eng
